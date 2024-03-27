@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osteopath John's Document Management System</title>
+    
+<link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+    <header>
+        <h1>Osteopath John's Document Management System</h1>
+    </header>
+    <h2>Choose Insurance Company Form</h2>
+<section>
+    <select id="insurance-company">
+        <option value="company1">Insurance Company 1</option>
+        <option value="company2">Insurance Company 2</option>
+        <!-- Add more options for other insurance companies -->
+    </select>
+</section>
+    <button onclick="fillOutForm()">Fill Out Form</button>
+
+    <script>
+        function fillOutForm() {
+            var selectedCompany = document.getElementById("insurance-company").value;
+            // Redirect to the appropriate form page based on the selected company
+            // Example: window.location.href = "fill-out-form.php?company=" + selectedCompany;
+        }
+    </script>
+</body>
+</html>
